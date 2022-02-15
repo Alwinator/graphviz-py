@@ -29,7 +29,7 @@ A -- C [headlabel="cos"];
 ### Output
 ![output](https://raw.githubusercontent.com/Alwinator/graphviz-py/main/assets/output.svg)
 
-## Install
+## Installation
 ```bash
 pip install graphviz-py
 ```
