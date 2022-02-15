@@ -16,12 +16,13 @@ sin = math.sin(value)
 cos = math.cos(value)
 }}
 
-    A [label="{{= value }}"];
-    B [label="{{= sin }}"];
-    C [label="{{= cos }}"];
+A [label="{{= value }}"];
+B [label="{{= sin }}"];
+C [label="{{= cos }}"];
 
-    A -- B;
-    A -- C;
+A -- B [headlabel="sin", labeldistance=1.5, labelangle=75];
+A -- C [headlabel="cos", labeldistance=2, labelangle=50];
+
 }
 ```
 
