@@ -25,16 +25,19 @@ cos = math.cos(value)
 ![output](assets/output.svg)
 
 ## Install
-Not possible yet!
+Coming soon!
 ```bash
 pip install graphviz-python
 ```
 
 ## Usage
+### Using files
 ```bash
 graphviz-python -Tsvg example/example.py.dot -o output.svg
 graphviz-python -Tpng example/example.py.dot -o output.png
 ```
+
+### Using stdin / pipes
 ```bash
 echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-python -Tsvg > output.svg
 ```
@@ -42,4 +45,5 @@ echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-python -Tsvg > out
 graphviz-python passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
 
 ## Coming soon
+- Requested the graphviz-python Pypi name
 - Compartibility with asciidoctor-diagram
