@@ -20,8 +20,8 @@ A [label="{{= value }}"];
 B [label="{{= sin }}"];
 C [label="{{= cos }}"];
 
-A -- B [headlabel="sin", labeldistance=1.5, labelangle=75];
-A -- C [headlabel="cos", labeldistance=2, labelangle=50];
+A -- B [headlabel="sin"];
+A -- C [headlabel="cos"];
 
 }
 ```
