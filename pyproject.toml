@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "graphviz-py"
-version = "0.0.3"
+version = "0.0.4"
 description = "Allows Python code execution inside of graphviz diagrams."
 authors = ["Alwin Schuster"]
 license = 'MPL-2'
