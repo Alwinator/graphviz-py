@@ -1,6 +1,29 @@
 # WIP: graphviz-python
 Allows Python code execution inside of [graphviz](https://graphviz.org/) diagrams
 
+## Example
+```graphviz
+graph python_graph {
+{{
+import math
+
+value = 0.5
+sin = math.sin(value)
+cos = math.cos(value)
+}}
+
+    A [label="{{= value }}"];
+    B [label="{{= sin }}"];
+    C [label="{{= cos }}"];
+
+    A -- B;
+    A -- C;
+}
+```
+
+### Output
+![output](assets/output.svg)
+
 ## Install
 Not possible yet!
 ```bash
