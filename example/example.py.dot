@@ -1,6 +1,7 @@
 graph python_graph {
 
 node [fontname="Arial"]
+edge [fontname="Arial"]
 
 {{
 import math

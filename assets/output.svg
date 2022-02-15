@@ -25,7 +25,7 @@
 <g id="edge1" class="edge">
 <title>A&#45;&#45;B</title>
 <path fill="none" stroke="black" d="M56.37,-72.76C50.39,-61.46 42.45,-46.44 36.48,-35.15"/>
-<text text-anchor="middle" x="25.49" y="-41.65" font-family="Times,serif" font-size="14.00">sin</text>
+<text text-anchor="middle" x="25.49" y="-41.65" font-family="Arial" font-size="14.00">sin</text>
 </g>
 <!-- C -->
 <g id="node3" class="node">
@@ -37,7 +37,7 @@
 <g id="edge2" class="edge">
 <title>A&#45;&#45;C</title>
 <path fill="none" stroke="black" d="M73.53,-72.76C79.51,-61.46 87.45,-46.44 93.41,-35.15"/>
-<text text-anchor="middle" x="73.86" y="-35.65" font-family="Times,serif" font-size="14.00">cos</text>
+<text text-anchor="middle" x="73.86" y="-35.65" font-family="Arial" font-size="14.00">cos</text>
 </g>
 </g>
 </svg>
