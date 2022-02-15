@@ -2,7 +2,7 @@
 Allows Python code execution inside of [graphviz](https://graphviz.org/) diagrams
 
 ## Example
-```graphviz
+```dot
 graph python_graph {
 {{
 import math
