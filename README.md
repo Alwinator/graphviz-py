@@ -1,6 +1,10 @@
 # WIP: graphviz-py
 Allows Python code execution inside of [graphviz](https://graphviz.org/) diagrams
 
+[![package version](https://img.shields.io/pypi/v/graphviz-py?style=flat-square)](https://pypi.org/project/graphviz-py/)
+[![py versions](https://img.shields.io/pypi/pyversions/graphviz-py?style=flat-square)](https://pypi.org/project/graphviz-py/)
+[![license](https://img.shields.io/github/license/Alwinator/graphviz-py?style=flat-square)](LICENSE)
+
 ## Example
 ```dot
 graph python_graph {
