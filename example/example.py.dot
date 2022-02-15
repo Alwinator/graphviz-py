@@ -1,4 +1,7 @@
 graph python_graph {
+
+node [fontname="Arial"]
+
 {{
 import math
 

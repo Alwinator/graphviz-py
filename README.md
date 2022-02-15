@@ -26,7 +26,7 @@ cos = math.cos(value)
 ```
 
 ### Output
-![output](assets/output.svg)
+![output](https://raw.githubusercontent.com/Alwinator/graphviz-py/518a9174f42b4cf1a1d4c5483bb611a6f6a5ef6e/assets/output.svg)
 
 ## Install
 ```bash
