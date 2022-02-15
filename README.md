@@ -1,8 +1,8 @@
 # graphviz-py
 [![package version](https://img.shields.io/pypi/v/graphviz-py?style=flat-square&color=%2300AA00)](https://pypi.org/project/graphviz-py/)
 [![py versions](https://img.shields.io/pypi/pyversions/graphviz-py?style=flat-square)](https://pypi.org/project/graphviz-py/)
-[![pypi](https://img.shields.io/github/workflow/status/Alwinator/graphviz-py/Publish%20to%20PyPi?label=Build%20%26%20Publish%20to%20PyPi&style=flat-square)](https://pypi.org/project/graphviz-py/)
-[![license](https://img.shields.io/github/license/Alwinator/graphviz-py?style=flat-square&color=%2300AA00)](LICENSE)
+[![pypi](https://img.shields.io/github/workflow/status/Alwinator/graphviz-py/Publish%20to%20PyPi?label=Build%20%26%20Publish&style=flat-square)](https://github.com/Alwinator/graphviz-py/actions)
+[![license](https://img.shields.io/github/license/Alwinator/graphviz-py?style=flat-square&color=%23006699)](LICENSE)
 
 Allows Python code execution inside of [graphviz](https://graphviz.org/) diagrams
 
