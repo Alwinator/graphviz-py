@@ -1,12 +1,14 @@
 import sys
 import argparse
+import importlib.metadata
 from pathlib import Path
 
-from graphviz_python.graphviz import execute_graphviz
-from graphviz_python.parser import convert
+from graphviz_py.graphviz import execute_graphviz
+from graphviz_py.parser import convert
+from graphviz_py.project import Project
 
-
-parser = argparse.ArgumentParser(description='graphviz-python diagram builder')
+parser = argparse.ArgumentParser(description='graphviz-py diagram builder')
+parser.add_argument('-v', '--version', action='version', version=f'{Project.name()} version: {Project.version()}')
 parser.add_argument('files', type=Path, nargs='+', help='an integer for the accumulator')
 
 args, unknown = parser.parse_known_args()

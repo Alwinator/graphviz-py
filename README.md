@@ -1,4 +1,4 @@
-# WIP: graphviz-python
+# WIP: graphviz-py
 Allows Python code execution inside of [graphviz](https://graphviz.org/) diagrams
 
 ## Example
@@ -27,23 +27,23 @@ cos = math.cos(value)
 ## Install
 Coming soon!
 ```bash
-pip install graphviz-python
+pip install graphviz-py
 ```
 
 ## Usage
 ### Using files
 ```bash
-graphviz-python -Tsvg example/example.py.dot -o output.svg
-graphviz-python -Tpng example/example.py.dot -o output.png
+graphviz-py -Tsvg example/example.py.dot -o output.svg
+graphviz-py -Tpng example/example.py.dot -o output.png
 ```
 
 ### Using stdin / pipes
 ```bash
-echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-python -Tsvg > output.svg
+echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg
 ```
 
-graphviz-python passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
+graphviz-py passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
 
 ## Coming soon
-- Requested the graphviz-python Pypi name
+- Requested the graphviz-py Pypi name
 - Compartibility with asciidoctor-diagram
