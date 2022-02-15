@@ -1,21 +1,22 @@
-# WIP: python-graphviz
+# WIP: graphviz-python
 Allows Python code execution inside of [graphviz](https://graphviz.org/) diagrams
 
 ## Install
+Not possible yet!
 ```bash
-pip install python-graphviz
+pip install graphviz-python
 ```
 
 ## Usage
 ```bash
-python-graphviz -Tsvg example/example.py.dot -o output.svg
-python-graphviz -Tpng example/example.py.dot -o output.png
+graphviz-python -Tsvg example/example.py.dot -o output.svg
+graphviz-python -Tpng example/example.py.dot -o output.png
 ```
 ```bash
-echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | python-graphviz -Tsvg > output.svg
+echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-python -Tsvg > output.svg
 ```
 
-python-graphviz passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
+graphviz-python passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
 
 ## Coming soon
 - Compartibility with asciidoctor-diagram
