@@ -1,4 +1,4 @@
-# Run using graphviz-py -Tpng example/example.py.dot -o output.png
+# Run using graphviz-py -Tpng -a myvalue=5 example/variable_example.py.dot -o output.png
 
 graph python_graph {
 
@@ -8,12 +8,11 @@ edge [fontname="Arial"]
 {{
 import math
 
-value = 0.5
-sin = math.sin(value)
-cos = math.cos(value)
+sin = math.sin(myvalue)
+cos = math.cos(myvalue)
 }}
 
-A [label="{{= value }}"];
+A [label="{{= myvalue }}"];
 B [label="{{= sin }}"];
 C [label="{{= cos }}"];
 

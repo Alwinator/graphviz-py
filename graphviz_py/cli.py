@@ -8,6 +8,7 @@ from graphviz_py.project import Project
 
 parser = argparse.ArgumentParser(description='graphviz-py diagram builder')
 parser.add_argument('-v', '--version', action='version', version=f'{Project.name()} version: {Project.version()}')
+parser.add_argument('-a', '--argument', action='append')
 parser.add_argument('files', type=Path, nargs=argparse.ZERO_OR_MORE, help='an integer for the accumulator')
 
 args, unknown = parser.parse_known_args()
@@ -17,6 +18,10 @@ def main(_=None):
     """Process command line arguments."""
 
     file_contents = []
+    arguments = []
+
+    if args.argument:
+        arguments = args.argument
 
     if args.files:
         for file in args.files:
@@ -27,7 +32,7 @@ def main(_=None):
         file_contents.append(sys.stdin.read())
 
     for c in file_contents:
-        graphviz_content = convert(c)
+        graphviz_content = convert(c, arguments)
         execute_graphviz(graphviz_content, unknown)
 
 

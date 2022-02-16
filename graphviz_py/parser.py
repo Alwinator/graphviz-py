@@ -1,14 +1,18 @@
 import sys
 import re
 import logging
+from typing import List
 
 py_regex = r'{{( |[= ]|\n)[^{}]+( |\n)}}'
 
 
-def convert(python_graphviz: str) -> str:
+def convert(python_graphviz: str, arguments: List[str]) -> str:
     """
     Convert python graphviz to graphviz
     """
+
+    for arg in arguments:
+        exec(arg)
 
     python_codes = re.finditer(py_regex, python_graphviz)
     position_correction = 0

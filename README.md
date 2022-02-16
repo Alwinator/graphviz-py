@@ -28,7 +28,7 @@ A -- C [headlabel="cos"];
 ```
 
 ### Output
-![output](https://raw.githubusercontent.com/Alwinator/graphviz-py/main/assets/output.svg)
+![output](https://raw.githubusercontent.com/Alwinator/graphviz-py/main/assets/output_file.svg)
 
 ## Installation
 ```bash
@@ -47,10 +47,21 @@ graphviz-py -Tpng example/example.py.dot -o output.png
 
 ### Using stdin / pipes
 ```bash
-echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg
+echo 'digraph { A -> B [label="  {{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg
 ```
-
 graphviz-py passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
+
+### Output
+![output](https://raw.githubusercontent.com/Alwinator/graphviz-py/main/assets/output_pipe.svg)
+
+## Variables
+```bash
+graphviz-py -Tsvg -a myvalue=5 example/variable_example.py.dot -o output.svg
+```
+Here we pass a variable called "myvalue" with the value 5
+
+### Output
+![output](https://raw.githubusercontent.com/Alwinator/graphviz-py/main/assets/output_variable.svg)
 
 ## Coming soon
 - Compartibility with asciidoctor-diagram
