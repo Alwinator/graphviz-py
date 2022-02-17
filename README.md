@@ -48,7 +48,7 @@ graphviz-py -Tpng example/example.py.dot -o output.png
 ### Using stdin / pipes
 [comment]: <> (echo 'digraph { node [fontname="Arial"]; edge [fontname="Arial"];  A -> B [label="  {{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg)
 ```bash
-echo 'digraph { A -> B [label="  {{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg
+echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg
 ```
 graphviz-py passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
 
