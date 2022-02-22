@@ -68,4 +68,4 @@ Here we pass a variable called "myvalue" with the value 5
 Please keep in mind that graphviz-py executes all Python code in the diagram. So make sure that your diagrams dies not include harmful code.
 
 ## Coming soon
-- Compartibility with asciidoctor-diagram
+- Compartibility with asciidoctor-diagram ([Status: Implemented & Approved, waiting for merging](https://github.com/asciidoctor/asciidoctor-diagram/pull/379))
