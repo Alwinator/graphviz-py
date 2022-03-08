@@ -48,7 +48,7 @@ graphviz-py -Tpng example/example.py.dot -o output.png
 ### Using stdin / pipes
 [comment]: <> (echo 'digraph { node [fontname="Arial"]; edge [fontname="Arial"];  A -> B [label="  {{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg)
 ```bash
-echo 'digraph { A -> B [label="  {{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg
+echo 'digraph { A -> B [label="{{= 38 * 73 }}"] }' | graphviz-py -Tsvg > output.svg
 ```
 graphviz-py passes all unknown arguments to graphviz. So you can use all [graphviz arguments](https://graphviz.org/doc/info/command.html).
 
@@ -68,4 +68,21 @@ Here we pass a variable called "myvalue" with the value 5
 Please keep in mind that graphviz-py executes all Python code in the diagram. So make sure that your diagrams dies not include harmful code.
 
 ## Coming soon
-- Compartibility with asciidoctor-diagram
+- Compartibility with asciidoctor-diagram ([Status: Implemented & Approved, waiting for merging](https://github.com/asciidoctor/asciidoctor-diagram/pull/379))
+
+## Arguments
+```bash
+# graphviz-py --help
+usage: graphviz-py [-h] [-v] [-d] [-a ARGUMENT] [files [files ...]]
+
+graphviz-py diagram builder
+
+positional arguments:
+  files                 the paths to the graphviz-py files
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -d, --debug           show debug information
+  -a ARGUMENT, --argument ARGUMENT
+```
