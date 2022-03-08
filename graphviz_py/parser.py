@@ -3,7 +3,7 @@ import re
 import logging
 from typing import List
 
-py_regex = r'{{( |[= ]|\n)((?!{{ |{{= | }})[\s\S])+( |\n)}}'
+py_regex = r'{{( |[= ]|\n)((?!{{( |[= ]|\n)|( |\n)}})[\s\S])+( |\n)}}'
 
 
 def convert(python_graphviz: str, arguments: List[str]) -> str:
