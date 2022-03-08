@@ -69,3 +69,20 @@ Please keep in mind that graphviz-py executes all Python code in the diagram. So
 
 ## Coming soon
 - Compartibility with asciidoctor-diagram ([Status: Implemented & Approved, waiting for merging](https://github.com/asciidoctor/asciidoctor-diagram/pull/379))
+
+## Arguments
+```bash
+# graphviz-py --help
+usage: graphviz-py [-h] [-v] [-d] [-a ARGUMENT] [files [files ...]]
+
+graphviz-py diagram builder
+
+positional arguments:
+  files                 the paths to the graphviz-py files
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -d, --debug           show debug information
+  -a ARGUMENT, --argument ARGUMENT
+```
