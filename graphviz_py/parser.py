@@ -50,7 +50,7 @@ def convert(python_graphviz: str, arguments: List[str]) -> str:
 
                 output = str(output)
             else:
-                exec(py_code)
+                exec(py_code, globals())
                 output = ""
         except Exception as ex:
             raise Exception(f"Error while processing: {expression}", ex)
