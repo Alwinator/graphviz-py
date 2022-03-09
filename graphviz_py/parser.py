@@ -12,7 +12,7 @@ def convert(python_graphviz: str, arguments: List[str]) -> str:
     """
 
     for arg in arguments:
-        exec(arg)
+        exec(arg, globals())
 
     python_codes = re.finditer(py_regex, python_graphviz)
     position_correction = 0
