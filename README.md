@@ -65,7 +65,7 @@ Here we pass a variable called "myvalue" with the value 5
 ![output](https://raw.githubusercontent.com/Alwinator/graphviz-py/main/assets/output_variable.svg)
 
 ## Security
-Please keep in mind that graphviz-py executes all Python code in the diagram. So make sure that your diagrams dies not include harmful code.
+Please keep in mind that graphviz-py executes all Python code in the diagram. So make sure that your diagrams do not include harmful code.
 
 ## Coming soon
 - Compartibility with asciidoctor-diagram ([Status: Implemented & Approved, waiting for merging](https://github.com/asciidoctor/asciidoctor-diagram/pull/379))
